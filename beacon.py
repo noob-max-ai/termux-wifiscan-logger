@@ -82,7 +82,7 @@ def append_write(filename ,sheet):
             
 def log_wifi_scaninfo(filename):
     output = termux_wifi_scaninfo()
-    if output != '[]':
+    if output != []:
         sheet = json_to_csv(output)
         #pprint_sheet(sheet)
 
@@ -91,6 +91,10 @@ def log_wifi_scaninfo(filename):
             append_write(filename ,sheet)
         else:
             flushed_write(filename ,sheet)
+    else:
+        goto_wifi_settings()
+        time.sleep(4)
+        log_wifi_scaninfo(filename)
 
 def goto_wifi_settings():
     CMD='am start -n com.android.settings/com.android.settings.wifi.WifiSettings'
