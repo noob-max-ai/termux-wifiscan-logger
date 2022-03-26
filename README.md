@@ -7,6 +7,14 @@ git clone https://github.com/noob-max-ai/termux-wifiscan-logger/ --depth=1
 cd termux-wifiscan-logger
 python beacon.py
 ```
+# setup with termux widgets
+
+```sh
+mv beacon.py ~/
+chmod +x beacon.sh
+mv beacon.sh ~/.shortcuts/
+
+```
 
 # How it Works
 + Turns on Wifi
