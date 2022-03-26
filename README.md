@@ -1,3 +1,6 @@
+![](https://img.shields.io/github/license/noob-max-ai/termux-wifiscan-logger) 
+![](https://img.shields.io/github/stars/noob-max-ai/termux-wifiscan-logger)
+![](https://img.shields.io/github/issues/noob-max-ai/termux-wifiscan-logger)
 # termux-wifiscan-logger
 User scripts to log wifiscan info to csv file.
 
