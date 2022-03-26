@@ -1,13 +1,17 @@
 # termux-wifiscan-logger
 User scripts to log wifiscan info to csv file.
 
-# installation
+# Motivation
+I built this to collect data about wifi beacons around me. I will add location related stuff later.
+The motivation was to analyze data around me.
+
+# Installation
 ```bash
 git clone https://github.com/noob-max-ai/termux-wifiscan-logger/ --depth=1
 cd termux-wifiscan-logger
 python beacon.py
 ```
-# setup with termux widgets
+# Setup with termux widgets
 
 ```sh
 mv beacon.py ~/
